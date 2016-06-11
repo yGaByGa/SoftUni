@@ -1,0 +1,21 @@
+//Printira *-ki na veski red kato zadava6 ot konzulata 
+kolko reda kato dobavq +1 na veki nov red
+
+using System;
+
+namespace TriangleOf55Stars
+{
+    class TriangleOf55Stars
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter a:");
+            int a = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < a; i++)
+            {
+                Console.WriteLine(new string('*' ,i+1));
+            }
+        }
+    }
+}
