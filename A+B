@@ -1,0 +1,21 @@
+//Vuvejdat se ot conzolata 2 cisla A i B i gi sybira
+
+
+using System;
+
+namespace TriangleOf55Stars
+{
+    class TriangleOf55Stars
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter a:");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("enter b:");
+            int b = int.Parse(Console.ReadLine());
+            int result = a * b;
+
+            Console.WriteLine("This area is : {0}",result );
+        }
+    }
+}
