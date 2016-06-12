@@ -32,5 +32,20 @@ namespace Sumator
             }
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var num3 = decimal.Parse(this.textBox4.Text);
+                var num4 = decimal.Parse(this.textBox5.Text);
+                var sum = num3 - num4;
+                textBox6.Text = sum.ToString();
+            }
+            catch (Exception)
+            {
+                textBox6.Text = "error";
+            }
+        }
     }
 }
