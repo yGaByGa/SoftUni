@@ -1,0 +1,17 @@
+using System;
+
+namespace Demo
+{
+    class Demo
+    {
+        static void Main(string[] args)
+        {
+            //p*r*r
+            double r = double.Parse(Console.ReadLine());
+            double p = 3.14;
+
+            var area = p * r * r;
+            Console.WriteLine(area);
+        }
+    }
+}
