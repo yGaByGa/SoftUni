@@ -1,23 +1,18 @@
 using System;
 
-namespace LiceNaPravoygylnikVRavnina
+namespace PerimetyrILiceNaKryg
 {
     class CircleAreaAndPerimeter
     {
         static void Main(string[] args)
         {
-            Console.Write("x1 = ");
-            double x1 = double.Parse(Console.ReadLine());
-            Console.Write("y1 = ");
-            double y1 = double.Parse(Console.ReadLine());
-            Console.Write("x2 = ");
-            double x2 = double.Parse(Console.ReadLine());
-            Console.Write("y2 = ");
-            double y2 = double.Parse(Console.ReadLine());
-            double xLenght = Math.Abs(x1 - x2);
-            double yLenght = Math.Abs(y1 - y2);
-            Console.WriteLine("Area = " + (xLenght * yLenght));
-            Console.WriteLine("Perimeter = " + (2 * (xLenght + yLenght)));
+            Console.Write("Radios= ");
+            double radios = double.Parse(Console.ReadLine());
+            double area = Math.PI * radios * radios ;
+            double perimetyr = 2 * Math.PI * radios ;
+
+            Console.WriteLine("Area= {0}" ,area ) ;
+            Console.WriteLine("Perimetye= {0}" ,perimetyr);
         }
     }
 }
