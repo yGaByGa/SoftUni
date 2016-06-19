@@ -1,0 +1,16 @@
+using System;
+
+namespace OtInchKymSantimetri
+{
+    class InchesToCentimeters
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Inch= ");
+            double inch = double.Parse(Console.ReadLine());
+            double result = inch * 2.54;
+
+            Console.WriteLine("Santimetri: {0}" ,result);
+        }
+    }
+}
