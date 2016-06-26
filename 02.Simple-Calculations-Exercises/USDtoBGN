@@ -1,3 +1,6 @@
+// Преобразува Долари в Левове
+
+
 using System;
 
 namespace USDtoBGN
