@@ -1,3 +1,6 @@
+//Преобразува температура целзии във фарентхайнт
+
+
 using System;
 
 namespace CelsiusToFahrenheit
