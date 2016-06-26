@@ -1,3 +1,6 @@
+//Пресмята лице на трапец по 2 страни и височина
+
+
 using System;
 
 namespace TrapeziodArea
