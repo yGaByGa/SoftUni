@@ -1,3 +1,6 @@
+//Въвеждаш сума и вида на валутата , после въвеждаш и каква валута искаш да получиш 
+
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
