@@ -1,40 +1,39 @@
 using System;
-
+ 
 namespace _06.BonusPoint
 {
     class BonustPoint
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter score: ");
-            double number = double.Parse(Console.ReadLine());
+            int number = int.Parse(Console.ReadLine());
             double result = number;
-            double bonus = 0;
-
-            if (number >= 1000)
+            double bonus = 0.0;
+ 
+            if (number > 100 && number <=1000)
             {
-                result = result + result * 10 / 100;
+                bonus = number / 5.0;
             }
-            else if (number > 100)
+            else if (number <= 100)
             {
-                result = result + result * 20 / 100;
-                // 20/100 otgovarq na 20% ili se izpolzva twentyPercent
+                bonus = 5;
             }
-            else
+            else if(number > 1000)
             {
-                result += 5;
+                bonus = number / 10.0;
             }
-
+           
             if (number % 2 == 0)
             {
-                bonus = result++;
+                bonus++;
             }
             else if (number % 5 == 0)
             {
-                bonus = result += 2;
+                bonus += 2;
             }
-            Console.WriteLine("Bonus score: " + (bonus - number));
-            Console.WriteLine("Total score: " + result);
+            double totalScore = number + bonus;
+            Console.WriteLine("Bonus score: " + bonus);
+            Console.WriteLine("Total score: " + totalScore);
         }
     }
 }
