@@ -1,3 +1,5 @@
+//Събиране на стрингове
+
 using System;
 
 namespace ConcatenateData
