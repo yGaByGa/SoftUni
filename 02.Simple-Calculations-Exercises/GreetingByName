@@ -1,3 +1,6 @@
+//Събиране на стринг
+
+
 using System;
 
 namespace GreetingByName
