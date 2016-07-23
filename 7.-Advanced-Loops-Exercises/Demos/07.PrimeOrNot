@@ -1,0 +1,31 @@
+using System;
+
+namespace _11.Demo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //proverka dali 4isloto e prosto ili ne 
+            int n = int.Parse(Console.ReadLine());
+            bool isPraim = true;
+
+            for (int i = 2; i < n; i++)
+            {
+                if (n % i == 0 && n != i)
+                {
+                    isPraim = false;
+                    break;
+                }
+            }
+            if (isPraim)
+            {
+                Console.WriteLine("Prime!");
+            }
+            else
+            {
+                Console.WriteLine("Number is not prime!");
+            }
+        }
+    }
+}
