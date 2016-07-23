@@ -1,0 +1,21 @@
+using System;
+
+namespace _07.Demo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Syshatata zadacha kato 04.demo no napravena s for
+            int n = int.Parse(Console.ReadLine());
+            int fac = 1;
+
+            for (int i = 1; i <= n; i++)
+            {
+                fac *= i;
+            }
+
+            Console.WriteLine(fac);
+        }
+    }
+}
