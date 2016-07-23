@@ -1,0 +1,25 @@
+using System;
+
+namespace _13.Demo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //fibunachi
+            int n = int.Parse(Console.ReadLine());
+            int first = 1;
+            int second = 1;
+
+            for (int i = 3; i <= n; i++)
+            {
+                //zapazvame predishnata i tekushtata stoinost v cikula 
+                int oldSecond = second;
+                second = oldSecond + first;
+                first = oldSecond;
+            }
+
+            Console.WriteLine(second);
+        }
+    }
+}
