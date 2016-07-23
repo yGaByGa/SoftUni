@@ -1,0 +1,29 @@
+using System;
+
+namespace _15.Demo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Printira kvadrat ot chisla kato diagonala e ot nai golqmoto - n
+            int n = int.Parse(Console.ReadLine());
+
+            for (int row = 0; row < n; row++)
+            {
+                for (int col = 0; col < n; col++)
+                {
+                    if (row + col + 1 > n)
+                    {
+                        Console.Write(2 * n - (row + col) -1 + " ");
+                    }
+                    else
+                    {
+                        Console.Write(row + col + 1 + " ");
+                    }
+                }
+                Console.WriteLine();
+            }
+        }
+    }
+}
