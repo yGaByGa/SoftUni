@@ -1,0 +1,41 @@
+Вариант А
+---------------------------------------------------------
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        double w = double.Parse(Console.ReadLine());
+        double h = double.Parse(Console.ReadLine());
+
+        h -= 1d;
+        int places = (int)(w / 1.2d) * (int)(h / 0.7d);
+        places -= 3;
+
+        Console.WriteLine(places);
+    }
+}
+
+------------------------------------------------------------------
+Вариант Б
+
+using System;
+
+    class Program
+    {
+        static void Main()
+        {
+            var h = double.Parse(Console.ReadLine());
+            var w = double.Parse(Console.ReadLine());
+            var realH = h * 100;
+            var realW = w * 100 - 100;
+            var ProverkaH = realH / 120; 
+            var PROVh = Math.Floor(ProverkaH, 0);
+            var ProverkaW = (realW / 70) ; 
+            var PROVw = Math.Round(ProverkaW, 0);
+            var ObshtiMesta = PROVh * PROVw - 3;
+            Console.WriteLine(ObshtiMesta);
+        }
+    }
