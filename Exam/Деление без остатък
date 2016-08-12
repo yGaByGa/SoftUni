@@ -1,0 +1,42 @@
+using System;
+
+class Startup
+{
+    static void Main()
+    {
+        int numberOfLines = int.Parse(Console.ReadLine());
+        int dividableBy2 = 0;
+        int dividableBy3 = 0;
+        int dividableBy4 = 0;
+
+        for (int i = 1; i <= numberOfLines; i++)
+        {
+            var number = int.Parse(Console.ReadLine());
+
+            if (number % 2 == 0)
+            {
+                dividableBy2++;
+            }
+            if (number % 3 == 0)
+            {
+                dividableBy3++;
+            }
+            if (number % 4 == 0)
+            {
+                dividableBy4++;
+            }
+        }
+
+        //double percentDividableBy2 = ((double)dividableBy2 / numberOfLines) * 100;
+        //double percentDividableBy3 = ((double)dividableBy3 / numberOfLines) * 100;
+        //double percentDividableBy4 = ((double)dividableBy4 / numberOfLines) * 100;
+
+        double percentDividableBy2 = (double.Parse(dividableBy2.ToString()) / numberOfLines) * 100;
+        double percentDividableBy3 = (double.Parse(dividableBy3.ToString()) / numberOfLines) * 100;
+        double percentDividableBy4 = (double.Parse(dividableBy4.ToString()) / numberOfLines) * 100;
+
+        Console.WriteLine($"{percentDividableBy2:f2}%");
+        Console.WriteLine($"{percentDividableBy3:f2}%");
+        Console.WriteLine($"{percentDividableBy4:f2}%");
+    }
+}
