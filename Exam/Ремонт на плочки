@@ -1,0 +1,26 @@
+using System;
+class Program
+{
+    static void Main(string[] args)
+    {
+        double i = double.Parse(Console.ReadLine()); // strana ploshtadka    // TUK E PO DOBRE DA IZPOLZVASH TIP INT
+        double a = double.Parse(Console.ReadLine()); //shirina plochki
+        double b = double.Parse(Console.ReadLine()); //duljina plochki
+        double c = double.Parse(Console.ReadLine()); //shirina peika         // TUK E PO DOBRE DA IZPOLZVASH TIP INT
+        double x = double.Parse(Console.ReadLine()); //duljina peika        // TUK E PO DOBRE DA IZPOLZVASH TIP INT
+
+
+        double ploshtadka = i * i;
+        double ploshtpeika = c * x;
+        double ploshtzapokrivane = ploshtadka - ploshtpeika;
+        double ploshtplochki = a * b;
+        //double plochki = (ploshtadka / ploshtplochki);                  // GRESHNO
+        double plochki = ploshtzapokrivane / ploshtplochki;
+        double vreme = plochki * 0.2;
+
+        //Console.WriteLine("Plochki = {0} ", +plochki);                  // GRESHNO
+        //Console.WriteLine("Vreme za slagane = {0} ", vreme);            // GRESHNO
+        Console.WriteLine(plochki);
+        Console.WriteLine(vreme);
+    }
+}
