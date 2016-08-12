@@ -1,0 +1,16 @@
+using System;
+
+class Vegetable
+{
+    static void Main(string[] args)
+    {
+        double priceVegetable = double.Parse(Console.ReadLine());
+        double priceFruit = double.Parse(Console.ReadLine());
+        int kgVegetable = int.Parse(Console.ReadLine());
+        int kgFruit = int.Parse(Console.ReadLine());
+        double first = (priceVegetable * kgVegetable) / 1.94;
+        double second = (priceFruit * kgFruit) / 1.94;
+        double resul = first + second;
+        Console.WriteLine("{0}", resul);            
+    }
+}
