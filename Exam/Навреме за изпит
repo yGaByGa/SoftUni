@@ -1,0 +1,63 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace On_Time_for_the_Exam
+{
+    class on_time
+    {
+        static void Main(string[] args)
+        {
+            int examH = int.Parse(Console.ReadLine());
+            int examM = int.Parse(Console.ReadLine());
+            int arriveH = int.Parse(Console.ReadLine());
+            int arriveM = int.Parse(Console.ReadLine());
+
+            int examTime = (examH * 60) + examM;
+            int arriveTime = (arriveH * 60) + arriveM;
+
+            int diff = examTime - arriveTime;
+            int diffModul = Math.Abs(diff);
+
+            int hours = diffModul/ 60;
+            int minutes = diffModul % 60;
+
+            if (diff <= 30 && diff>=0)
+            {
+                Console.WriteLine("On time");
+                if (diff != 0)
+                {
+                    Console.WriteLine("{0} minutes before the start",diffModul);
+                }
+            }
+            else if (diff>30)
+            {
+                Console.WriteLine("Early");
+                if (diffModul<60)
+                {
+                    Console.WriteLine("{0} minutes before the start",diffModul);
+                }
+                else
+                {
+                    Console.WriteLine("{0}:{1:00} hours before the start",hours,minutes);
+                }
+
+            }
+            else if(diff<0)
+            {
+                Console.WriteLine("Late");
+                if (diffModul < 60)
+                {
+                   Console.WriteLine("{0} minutes before the start",diffModul);
+                }
+                else
+                {
+                    Console.WriteLine("{0}:{1:00} hours after the start", hours, minutes);
+                }
+
+            }
+        }
+    }
+}
