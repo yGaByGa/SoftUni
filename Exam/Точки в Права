@@ -1,0 +1,43 @@
+using System;
+
+namespace _06.Demo
+{
+    class TochkiVPrava
+    {
+        static void Main(string[] args)
+        {
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
+
+            int ac = Math.Abs(a - c);
+            int bc = Math.Abs(b - c);
+            int closest = ac < bc ? ac : bc;
+
+            if (a < b)
+            {
+                if (a <= c && c <= b)
+                {
+                    Console.WriteLine("In");
+                }
+                else
+                {
+                    Console.WriteLine("Out");
+                }
+            }
+            if (b < a)
+            {
+                if (b <= c && c <= a)
+                {
+                    Console.WriteLine("In");
+                }
+                else
+                {
+                    Console.WriteLine("Out");
+                }
+            }
+
+            Console.WriteLine(closest);
+        }
+    }
+}
