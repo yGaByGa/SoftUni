@@ -1,0 +1,47 @@
+using System;
+
+namespace _11.Demo
+{
+    class BiggestLine
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+            int line = 1;
+            int max = 1;
+
+            if (n == 0)
+            {
+                Console.WriteLine("0");
+                return;
+            }
+            int oldNumber = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i < n; i++)
+            {
+                int number = int.Parse(Console.ReadLine());
+
+                if (number > oldNumber)
+                {
+                    line++;
+                }
+                else
+                {
+                    if (max < line)
+                    {
+                        max = line;
+                    }
+
+                    line = 1;
+                }
+
+                oldNumber = number;
+            }
+            if (max < line)
+            {
+                max = line;
+            }
+            Console.WriteLine(max);
+        }
+    }
+}
