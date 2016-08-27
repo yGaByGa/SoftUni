@@ -1,0 +1,38 @@
+using System;
+namespace _15.Demo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+            int m = int.Parse(Console.ReadLine());
+            bool isNo = true;
+
+            for (int left = -n; left < n; left++)
+            {
+                for (int right = left + 1; right <= n; right++)
+                {
+                    for (int top = -n; top < n; top++)
+                    {
+                        for (int botton = top + 1; botton <= n; botton++)
+                        {
+                            int a = Math.Abs(top - botton);
+                            int b = Math.Abs(right - left);
+                            int area = a * b;
+                            if (area >= m)
+                            {
+                                Console.WriteLine("({0},{1}) ({2},{3}) -> {4}", left, top, right, botton , area);
+                                isNo = false;
+                            }
+                        }
+                    }
+                }
+            }
+            if (isNo)
+            {
+                Console.WriteLine("No");
+            }
+        }
+    }
+}
