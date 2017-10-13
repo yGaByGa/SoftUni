@@ -1,13 +1,12 @@
-//Преобразува температура целзии във фарентхайнт
-
+﻿//Преобразува температура целзии във фарентхайнт
 
 using System;
 
-namespace CelsiusToFahrenheit
+namespace _001.CelsiusToFahrenheit
 {
     class CelsiusToFahrenheit
     {
-        static void Main(string[] args)
+        static void Main()
         {
             double celsius, faren;
             Console.Write("Temperature in Celsius(°C): ");

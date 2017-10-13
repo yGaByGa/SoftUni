@@ -1,13 +1,12 @@
-//Лице на кръг
-
+﻿//Лице на кръг
 
 using System;
 
-namespace Demo
+namespace _006.AreaOnCircle
 {
-    class Demo
+    class AreaOnCircle
     {
-        static void Main(string[] args)
+        static void Main()
         {
             //p*r*r
             double r = double.Parse(Console.ReadLine());

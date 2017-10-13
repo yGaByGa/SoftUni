@@ -1,14 +1,10 @@
-//Въвеждаш сума и вида на валутата , после въвеждаш и каква валута искаш да получиш 
-
+﻿//Въвеждаш сума и вида на валутата, после се въвежда и каква валута искаш да получиш 
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace Program
+namespace _002.ChangeMoney
 {
-    class Program
+    class ChangeMoney
     {
         static void Main()
         {

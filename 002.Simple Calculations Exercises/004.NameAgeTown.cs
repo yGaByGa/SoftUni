@@ -1,10 +1,10 @@
-//Събиране на стрингове
+﻿//Събиране на стрингове(първо име, фамилия, години и град)
 
 using System;
 
-namespace ConcatenateData
+namespace _004.NameAgeTown
 {
-    class ConcatenateData
+    class NameAgeTown
     {
         static void Main(string[] args)
         {
@@ -13,7 +13,7 @@ namespace ConcatenateData
             var age = int.Parse(Console.ReadLine());
             var town = Console.ReadLine();
 
-            Console.WriteLine("You are {0} {1}, a {2}-years old person from {3}. " ,firstName ,lastName ,age , town);
+            Console.WriteLine("You are {0} {1}, a {2}-years old person from {3}. ", firstName, lastName, age, town);
         }
     }
 }
